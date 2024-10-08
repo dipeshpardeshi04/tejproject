@@ -51,3 +51,5 @@ def search(request):
     query = request.GET.get('q')
     courses = Course.objects.filter(title__icontains=query)
     return render(request, 'courses/search_results.html', {'courses': courses})
+def home(request):
+    return render(request, 'home.html')

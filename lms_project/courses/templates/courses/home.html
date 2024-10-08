@@ -1,0 +1,34 @@
+<!-- myapp/templates/home.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - CartCrafter</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- Add your CSS file if needed -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'courses' %}">Courses</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'register' %}">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to CartCrafter!</h1>
+        <p>Your one-stop solution for managing courses and learning materials.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CartCrafter. All rights reserved.</p>
+    </footer>
+</body>
+</html>
